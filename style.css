@@ -1,0 +1,130 @@
+
+/* NEON LAYOUTING with BEM*/
+.theme-neon_bg-1 {
+  background-color: #D705F2;
+}
+.theme-neon_bg-2 {
+  background-color: #A904BF;
+}
+.theme-neon_bg-3 {
+  background-color: #660273;
+}
+.theme-neon_bg-4 {
+  background-color: #380140;
+}
+.theme-neon_bg-5 {
+  background-color: #220126;
+}
+
+/*PLASTIC LAYOUTING with BEM*/
+.theme-neon_bg-1 {
+  background-color: #F2F2F2;
+}
+.theme-neon_bg-2 {
+  background-color: #D9D9D9;
+}
+.theme-neon_bg-3 {
+  background-color: #BFBFBF;
+}
+.theme-neon_bg-4 {
+  background-color: #737373;
+}
+.theme-neon_bg-5 {
+  background-color: #404040;
+}
+
+/*SWITCH CLASSES*/
+.switch {
+  /*border: 1px solid red;*/
+
+  display: inline-block;
+  /*width: 90px;
+  height: 90px;
+
+  padding: 6px;
+  */
+  border-radius: 100%;
+
+  box-shadow: inset 0 0 3px 0;
+
+  cursor: pointer;
+}
+.switch_md{
+  width: 90px;
+  height: 90px;
+
+  padding: 6px;
+}
+.swithc_sm {
+  width: 60px;
+  height: 60px;
+
+  padding: 4px;
+}
+
+.switch_checkbox {
+  display: none;
+}
+.switch_md .switch_icon {
+  width: 90px;
+  height: 90px;
+}
+.switch_sm .switch_icon {
+  width: 60px;
+  height: 60px;
+  background-size: 40px;
+}
+.switch_icon {
+  /*width: 90px;
+  height: 90px;*/
+  /*border: 1px solid green;*/
+  
+  border-radius: 100%;
+  background-image: url(images/on-off-button.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  box-sizing: border-box;
+
+  box-shadow:  0 0 4px 1px;
+}
+
+/*SWITCH STATE MODIFIERS*/
+
+
+/*COMPONENT THEME NEON CLASSES*/
+.switch_theme_neon {
+  box-shadow:  0 0 3px 0 black;
+
+}
+.switch_theme_neon .switch_icon {
+  background-color: #660273;
+  box-shadow:  0 0 4px 1px black;
+}
+.switch_disabled.switch_theme_neon .switch_icon {
+  background-color: #660273 !important;
+  box-shadow:  0 0 4px 1px black !important;
+}
+.switch_theme_neon .switch_checkbox:checked + .switch_icon {
+  background-color: #D705F2;
+  box-shadow:  0 0 4px 1px #660273;
+}
+
+
+/*COMPONENT THEME PLASTIC CLASSES*/
+.switch_theme_pastic {
+  box-shadow:  0 0 3px 0 black;
+}
+.switch_disabled.switch_theme_plastic .switch_icon {
+  background-color: #BFBFBF !important;
+  box-shadow:  0 0 4px 1px black !important;
+}
+.switch_theme_plastic .switch_icon {
+  background-color: #BFBFBF;
+  box-shadow:  0 0 4px 1px black;
+}
+
+.switch_theme_plastic .switch_checkbox:checked + .switch_icon {
+  background-color: #F2F2F2;
+  box-shadow:  0 0 4px 1px #BFBFBF;
+}
